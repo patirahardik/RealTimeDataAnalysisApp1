@@ -1,0 +1,13 @@
+Set the logdir location in zookeeper.properties and server.properties
+
+#Go to Kafka Directory
+C:\kafka
+
+#Start zookeeper
+bin/windows/zookeeper-server-start.bat config/zookeeper.properties
+
+#Start Kafka 
+bin/windows/kafka-server-start.bat config/server.properties
+
+# List of topic
+bin/windows/kafka-topics.bat --list --bootstrap-server localhost:9092
